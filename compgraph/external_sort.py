@@ -2,7 +2,7 @@ import typing as tp
 from multiprocessing import Pipe, Process, connection
 from operator import itemgetter
 
-from .base import Operation, TRowsIterable, TRowsGenerator
+from .operations import Operation, TRowsIterable, TRowsGenerator
 
 
 def do_sort(endpoint: connection.Connection, keys: tuple[str, ...]) -> None:
